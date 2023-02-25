@@ -1,5 +1,5 @@
 {
-    "name": "williarin/cook",
+    "name": "robywan/cook",
     "description": "Composer plugin to execute recipes embedded in packages",
     "license": "MIT",
     "type": "composer-plugin",
