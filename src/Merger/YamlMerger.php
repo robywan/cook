@@ -38,7 +38,7 @@ class YamlMerger extends AbstractMerger
         foreach ($this->validSections ?? array_keys($inputParsed) as $section) {
             if (
                 !\array_key_exists($section, $inputParsed)
-                || !preg_match('/(?:^|\n)' . $section . ':\s+?(\s{4}.*)(?:\n\w|$)/sU', $input, $inputMatch)
+                || !preg_match('/(?:^|\n)' . $section . ':\s+?(\s{2,4}.*)(?:\n\w|$)/sU', $input, $inputMatch)
             ) {
                 continue;
             }

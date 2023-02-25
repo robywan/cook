@@ -126,7 +126,9 @@ class JsonMerger extends AbstractMerger
 
                         if (empty($output[$section])) {
                             unset($output[$section]);
-                        }
+                        } else {
+							$output[$section] = array_merge($output[$section]);
+						}
                     }
                 } else {
                     unset($output[$section]);
